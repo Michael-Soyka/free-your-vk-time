@@ -14,12 +14,12 @@
     document.getElementById("react_rootEcosystemServicesNavigationEntry").remove();
 
     if (window.location.href == "https://vk.com/feed") {
-        var MakeDealWithDevil = confirm("ТЫ ТОЧНО УВЕРЕН? ЧТО ХОЧЕШЬ ПОЛИСТАТЬ ЭТУ ГРЕБАНУЮ ЛЕНТУ С НОВОСТЯМИ???");
+        var MakeDealWithDevil = confirm("ТЫ ТОЧНО УВЕРЕН, ЧТО ХОЧЕШЬ ПОЛИСТАТЬ ЭТУ ГРЕБАНУЮ ЛЕНТУ С НОВОСТЯМИ???");
         if (!MakeDealWithDevil) {
             window.location.replace("https://vk.com/im")
-            console.log("+10 Social Credit")
+            // console.log("+10 Social Credit")
         } else {
-            console.log("-10 Social Credit")
+            // console.log("-10 Social Credit")
         }
     }
 
