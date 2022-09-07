@@ -10,6 +10,7 @@
 // ==/UserScript==
 
 (function() {
+
     document.getElementById("l_nwsf").remove();
     document.getElementById("react_rootEcosystemServicesNavigationEntry").remove();
 
@@ -26,4 +27,26 @@
     if (document.getElementById("fastchat-reforged") !== null) {
         document.getElementById("fastchat-reforged").remove();
     }
+
+    var simple_vk = `
+    .vkui--vkCom--dark {
+    --vkui--size_border_radius--regular: 0px;
+    --vkui--size_check_border_radius--regular: 0px;
+    --vkui--size_border_radius_paper--regular: 0px;
+    --vkui--size_border_radius_promo--regular: 0px;
+    }
+    .vkui--vkCom--light {
+    --vkui--size_border_radius--regular: 0px;
+    --vkui--size_check_border_radius--regular: 0px;
+    --vkui--size_border_radius_paper--regular: 0px;
+    --vkui--size_border_radius_promo--regular: 0px;
+    .top_audio_player {
+    max-width: none;
+    }
+    `
+
+    var styleSheet = document.createElement("style")
+    styleSheet.innerText = simple_vk
+    document.head.appendChild(styleSheet)
+
 })();
