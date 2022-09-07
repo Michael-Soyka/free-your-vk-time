@@ -24,9 +24,9 @@
         }
     }
 
-    if (document.getElementById("fastchat-reforged") !== null) {
-        document.getElementById("fastchat-reforged").remove();
-    }
+    //if (document.getElementById("fastchat-reforged") !== null) {
+    //    document.getElementById("fastchat-reforged").remove();
+    //}
 
     var simple_vk = `
     .vkui--vkCom--dark {
